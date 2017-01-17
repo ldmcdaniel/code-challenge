@@ -5,11 +5,6 @@
 "use strict";
 
 class Hamming {
-  constructor(first, second) {
-    this.first = first;
-    this.second = second;
-  };
-
   compute(first, second) {
     if (first === second) {
       return 0;
