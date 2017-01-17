@@ -4,7 +4,6 @@
 #
 
 def compute(first, second):
-    pass
     if first == second:
         return 0
     elif len(first) != len(second):
