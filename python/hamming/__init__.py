@@ -3,5 +3,15 @@
 # unit tests pass and your code meets all of the conditions.
 #
 
-def compute():
+def compute(first, second):
     pass
+    if first == second:
+        return 0
+    elif len(first) != len(second):
+        raise ValueError('%s and %s are not the same length.' % (first, second,))
+    else:
+        count = 0
+        for i in range(0, len(first)):
+            if first[i] != second[i]:
+                count += 1
+        return count
